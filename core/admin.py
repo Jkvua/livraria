@@ -8,4 +8,8 @@ from core.models import Autor
 
 admin.site.register(Autor)
 
+from core.models import Editora
+
+admin.site.register(Editora)
+
 

@@ -6,3 +6,6 @@ class CategariaSerializer(ModelSerializer):
     class Meta:
         model = Categoria
         fields = "__all__"
+
+
+class 

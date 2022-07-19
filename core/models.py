@@ -9,14 +9,14 @@ class Categoria(models.Model):
 
 class Editora(models.Model):
     nome = models.CharField(max_length=255)
-    site = models.URLField()
+    site = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.nome
 
 class Autor(models.Model):
     nome = models.CharField(max_length=255)
-    email = models.EmailField()
+    email = models.EmailField(blank=True, null=True)
 
     def __str__(self):
         return self.nome
@@ -26,9 +26,9 @@ class Autor(models.Model):
 
 class Livro(models.Model):
     titulo = models.CharField(max_length=255)
-    isbn = models.CharField(max_length=32)
-    quantidade = models.IntegerField()
-    preco = models.DecimalField(max_digits=7, decimal_places=2)
+    isbn = models.CharField(max_length=32, blank=True, null=True)
+    quantidade = models.IntegerField(blank=True, null=True)
+    preco = models.DecimalField(max_digits=7, decimal_places=2, blank=True, null=True)
     categoria = models.ForeignKey(
         Categoria, on_delete=models.PROTECT, related_name="livros"
     )

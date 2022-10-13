@@ -1,0 +1,89 @@
+[
+{
+  "model": "core.usuario",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$wW0PTS04xPx4oZd3GTU5nv$a7xVq+RIVIWNheD+UoE0FoombMM2doGFaHmr+doo8/g=",
+    "last_login": "2022-10-13T18:43:35.816Z",
+    "is_superuser": true,
+    "username": "camila",
+    "first_name": "",
+    "last_name": "",
+    "email": "mila.e.ferreira28@gmail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-10-03T17:40:26.911Z",
+    "cpf": "",
+    "telefone": null,
+    "data_nascimento": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "media.document",
+  "pk": 1,
+  "fields": {
+    "attachment_key": "562de40b-83fc-471e-97f6-a5ef55da271e",
+    "public_id": "43a07a62-1f52-4867-bf4f-6df0967174e9",
+    "file": "documents/43a07a62-1f52-4867-bf4f-6df0967174e9.jpg",
+    "description": "lindos the office",
+    "uploaded_on": "2022-10-06T19:20:49.906Z"
+  }
+},
+{
+  "model": "media.image",
+  "pk": 1,
+  "fields": {
+    "attachment_key": "28bb6af6-899e-410e-a883-7433989c9ae4",
+    "public_id": "51ab5c91-1ff0-4219-8d8c-78dc608410d9",
+    "file": "images/51ab5c91-1ff0-4219-8d8c-78dc608410d9.jpg",
+    "description": "jim e pam",
+    "uploaded_on": "2022-10-06T19:29:19.937Z"
+  }
+},
+{
+  "model": "media.image",
+  "pk": 2,
+  "fields": {
+    "attachment_key": "791d6f88-e050-464c-97ed-af28d3773698",
+    "public_id": "7adfe97a-2123-4c02-8ec2-f3c198169052",
+    "file": "images/7adfe97a-2123-4c02-8ec2-f3c198169052.jpg",
+    "description": "Jim e Pam",
+    "uploaded_on": "2022-10-06T19:30:30.694Z"
+  }
+},
+{
+  "model": "media.image",
+  "pk": 3,
+  "fields": {
+    "attachment_key": "d78a4865-60af-4291-a00c-f7f640806001",
+    "public_id": "c248cb62-65a2-4d64-a6b0-63565c0d2579",
+    "file": "images/c248cb62-65a2-4d64-a6b0-63565c0d2579.jpg",
+    "description": "lindos",
+    "uploaded_on": "2022-10-06T19:32:01.633Z"
+  }
+},
+{
+  "model": "media.image",
+  "pk": 4,
+  "fields": {
+    "attachment_key": "c05959f6-5d15-4550-8452-8e2cd4093309",
+    "public_id": "fb904e15-a084-4381-91fa-bbe6a56f959e",
+    "file": "images/fb904e15-a084-4381-91fa-bbe6a56f959e.jpg",
+    "description": "lindos",
+    "uploaded_on": "2022-10-06T19:32:24.702Z"
+  }
+},
+{
+  "model": "media.image",
+  "pk": 5,
+  "fields": {
+    "attachment_key": "399adea4-e7ea-4cd2-8eec-9d3996855d8d",
+    "public_id": "04371cea-4949-49df-aa1e-b5ae30de6875",
+    "file": "images/04371cea-4949-49df-aa1e-b5ae30de6875.jpg",
+    "description": "lindos",
+    "uploaded_on": "2022-10-06T19:33:36.110Z"
+  }
+}
+]

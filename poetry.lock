@@ -153,6 +153,20 @@ optional = false
 python-versions = ">=3.5"
 
 [[package]]
+name = "isort"
+version = "5.10.1"
+description = "A Python utility / library to sort Python imports."
+category = "dev"
+optional = false
+python-versions = ">=3.6.1,<4.0"
+
+[package.extras]
+pipfile_deprecated_finder = ["pipreqs", "requirementslib"]
+requirements_deprecated_finder = ["pipreqs", "pip-api"]
+colors = ["colorama (>=0.4.3,<0.5.0)"]
+plugins = ["setuptools"]
+
+[[package]]
 name = "jsonschema"
 version = "4.16.0"
 description = "An implementation of JSON Schema validation for Python"
@@ -286,7 +300,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "pytest-
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "dc2cc6ce312ebdc3f5e33e8ee912689c82b814cbf9605595cba6c9fd349b74ed"
+content-hash = "b27218b6d8d00b338c6ce8e99ce80469b1b2737cfed8d21848bcc1316d3dbd4e"
 
 [metadata.files]
 asgiref = [
@@ -323,6 +337,7 @@ drf-spectacular = []
 gunicorn = []
 importlib-resources = []
 inflection = []
+isort = []
 jsonschema = []
 pillow = []
 pkgutil-resolve-name = []

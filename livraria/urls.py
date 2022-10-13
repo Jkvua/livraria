@@ -1,24 +1,18 @@
-from django.contrib import admin
-from django.urls import include, path
 from django.conf import settings
 from django.conf.urls.static import static
-
-from media.router import router as media_router
-
-from rest_framework_simplejwt.views import (
-    TokenObtainPairView,
-    TokenRefreshView,
-)
-
-from rest_framework.routers import DefaultRouter
-
-from core.views import AutorViewSet, CategoriaViewSet, EditorasViewSet, LivroViewSet
+from django.contrib import admin
+from django.urls import include, path
 
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularRedocView,
     SpectacularSwaggerView,
 )
+from rest_framework.routers import DefaultRouter
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+
+from core.views import AutorViewSet, CategoriaViewSet, EditorasViewSet, LivroViewSet
+from media.router import router as media_router
 
 router = DefaultRouter()
 router.register(r'categorias', CategoriaViewSet)
@@ -43,7 +37,8 @@ urlpatterns = [
         SpectacularRedocView.as_view(url_name="schema"),
         name="redoc",
     ),
-    path('', include(router.urls),),
+    path("api/", include(router.urls)),
+    
 ]
 
 urlpatterns += static(settings.MEDIA_ENDPOINT, document_root=settings.MEDIA_ROOT)
